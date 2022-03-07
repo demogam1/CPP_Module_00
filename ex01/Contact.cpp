@@ -6,7 +6,7 @@
 /*   By: misaev <misaev@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 17:11:43 by misaev            #+#    #+#             */
-/*   Updated: 2022/02/26 17:38:52 by misaev           ###   ########.fr       */
+/*   Updated: 2022/03/01 10:39:14 by misaev           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Contact::~Contact()
 {
-    std::cout << "Destructeur appeler" << std::endl;
+    std::cout << "Contact Destructeur appeler" << std::endl;
     return;    
 }
 
@@ -24,7 +24,7 @@ Contact::Contact(void)
     return;    
 }
 
-Contact::Contact(std::string frst_name, std::string lst_name, std::string surname, int phone_nbr, std::string darkest_secret)
+Contact::Contact(std::string frst_name, std::string lst_name, std::string surname, std::string phone_nbr, std::string darkest_secret)
 {
     this->frst_name = frst_name;
     this->lst_name = lst_name;
@@ -34,4 +34,18 @@ Contact::Contact(std::string frst_name, std::string lst_name, std::string surnam
     return;
 }
 
+std::string Contact::return_name(void) const
+{
+    return frst_name;
+}
+
+std::string Contact::return_lstname(void) const
+{
+    return lst_name;
+}
+
+std::string Contact::return_surname(void) const
+{
+    return surname;   
+}
 

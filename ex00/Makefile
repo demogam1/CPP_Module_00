@@ -6,7 +6,6 @@ NAME= Megaphone
 
 SRC= Megaphone.cpp\
 
-
 all: $(NAME)
 
 $(NAME): $(SRC)

@@ -6,7 +6,7 @@
 /*   By: misaev <misaev@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 17:11:43 by misaev            #+#    #+#             */
-/*   Updated: 2022/03/01 10:39:14 by misaev           ###   ########.fr       */
+/*   Updated: 2022/03/08 13:20:29 by misaev           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 Contact::~Contact()
 {
-    std::cout << "Contact Destructeur appeler" << std::endl;
+    std::cout << RED_BOLD << "Contact Destructeur appeler" << END_RED_BOLD << std::endl;
     return;    
 }
 
 Contact::Contact(void)
 {
-    std::cout << "Constructeur appeler" << std::endl;
+    std::cout << GREEN_BOLD << "Constructeur appeler" << END_GREEN_BOLD << std::endl;
     return;    
 }
 

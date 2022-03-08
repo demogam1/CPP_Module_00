@@ -6,7 +6,9 @@ NAME= PhoneBook
 
 SRC= PhoneBook.cpp Repertoire.cpp Contact.cpp \
 
-all:$(SRC)
+all: $(NAME)
+
+$(NAME): $(SRC)
 	$(CC) $(FLAGS) $(SRC) -o $(NAME)
 
 fclean:

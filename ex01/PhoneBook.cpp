@@ -6,7 +6,7 @@
 /*   By: misaev <misaev@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 17:11:17 by misaev            #+#    #+#             */
-/*   Updated: 2022/03/02 15:05:53 by misaev           ###   ########.fr       */
+/*   Updated: 2022/03/08 13:18:31 by misaev           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 PhoneBook::PhoneBook(void)
 {
     this->nbr_contact = 1;
-    std::cout << "Constructeur appeler" << std::endl;
+    std::cout << GREEN_BOLD << "Constructeur appeler" << END_GREEN_BOLD << std::endl;
     return;
 }
 
 PhoneBook::~PhoneBook()
 {
-    std::cout << "PhoneBook Destructeur appeler" << std::endl;
+    std::cout << RED_BOLD << "PhoneBook Destructeur appeler" << END_RED_BOLD << std::endl;
     return;    
 }
 
